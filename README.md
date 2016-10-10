@@ -1,17 +1,17 @@
-# DOL¿ª·¢»·¾³ÅäÖÃ
+ï»¿# DOLå¼€å‘ç¯å¢ƒé…ç½®
 ### Description
 
-DOL ÊÇ»ùÓÚÊı¾İÁ÷´¦ÀíÍøÂçµÄÆ½Ì¨ÎŞ¹ØµÄ MPSoC ±à³Ì»·¾³¡£
+DOL æ˜¯åŸºäºæ•°æ®æµå¤„ç†ç½‘ç»œçš„å¹³å°æ— å…³çš„ MPSoC ç¼–ç¨‹ç¯å¢ƒã€‚
 
 ### How to install
 
-1.ÏÂÔØÎÄ¼ş
+1.ä¸‹è½½æ–‡ä»¶
 ```
     sudo wget http://www.accellera.org/images/downloads/standards/systemc/systemc-2.3.1.tgz
     sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip   
 ```
 
-2.½âÑ¹ÎÄ¼ş
+2.è§£å‹æ–‡ä»¶
 
 ```
 	$ sudo mkdir dol 
@@ -19,7 +19,7 @@ DOL ÊÇ»ùÓÚÊı¾İÁ÷´¦ÀíÍøÂçµÄÆ½Ì¨ÎŞ¹ØµÄ MPSoC ±à³Ì»·¾³¡£
 	$ sudo tar -zxvf systemc-2.3.1.tgz
 ```
 
-3.±àÒësystemc
+3.ç¼–è¯‘systemc
 
 ```
     $ cd systemc-2.3.1
@@ -29,35 +29,35 @@ DOL ÊÇ»ùÓÚÊı¾İÁ÷´¦ÀíÍøÂçµÄÆ½Ì¨ÎŞ¹ØµÄ MPSoC ±à³Ì»·¾³¡£
     $ make install
 ```
 
-ÏÂÍ¼ÎªÔËĞĞconfigureµÄ½ØÍ¼
+ä¸‹å›¾ä¸ºè¿è¡Œconfigureçš„æˆªå›¾
 
 ![build settings](https://ooo.0o0.ooo/2016/10/10/57fb7306aee0a.png)
 
-±àÒëÍêºóÎÄ¼şÄ¿Â¼ÈçÏÂ($ cd .. $ ls
+ç¼–è¯‘å®Œåæ–‡ä»¶ç›®å½•å¦‚ä¸‹($ cd .. $ ls
 
 ![2](https://ooo.0o0.ooo/2016/10/10/57fb732c9a10a.jpg)
 
-4.±àÒëdol
+4.ç¼–è¯‘dol
 
-½øÈë¸Õ¸ÕdolµÄÎÄ¼ş¼Ğ
+è¿›å…¥åˆšåˆšdolçš„æ–‡ä»¶å¤¹
 
 ```
 	$ cd ../dol
 ```
 
-ĞŞ¸Äbuild_zip.xmlÎÄ¼ş ÕÒµ½ÏÂÃæÕâ¶Î»°,¾ÍÊÇËµÉÏÃæ±àÒëµÄsystemcÎ»ÖÃÔÚÄÄÀï, 
+ä¿®æ”¹build_zip.xmlæ–‡ä»¶ æ‰¾åˆ°ä¸‹é¢è¿™æ®µè¯,å°±æ˜¯è¯´ä¸Šé¢ç¼–è¯‘çš„systemcä½ç½®åœ¨å“ªé‡Œ, 
 
-    ££<property name="systemc.inc" value="YYY/include"/>
-    ££<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/> 
+    ï¼ƒ<property name="systemc.inc" value="YYY/include"/>
+    ï¼ƒ<property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/> 
 
-°ÑYYY¸Ä³ÉÉÏÒ³pwdµÄ½á¹û(×¢Òâ,¶ÔÓÚ 64Î» ÏµÍ³µÄ»úÆ÷,lib-linuxÒª¸Ä³Élib-linux64)
-È»ºóÊÇ±àÒë
+æŠŠYYYæ”¹æˆä¸Šé¡µpwdçš„ç»“æœ(æ³¨æ„,å¯¹äº 64ä½ ç³»ç»Ÿçš„æœºå™¨,lib-linuxè¦æ”¹æˆlib-linux64)
+ç„¶åæ˜¯ç¼–è¯‘
 
 ```
 	$ant -f build_zip.xml all
 ```
 
-³É¹¦»áÏÔÊ¾build successful
+æˆåŠŸä¼šæ˜¾ç¤ºbuild successful
 Run example1:
 
 ```
@@ -65,9 +65,9 @@ $ cd dol/build/bin/main
 $ ant -f runexample.xml -Dnumber=1
 ```
 
-³É¹¦½á¹ûÈçÍ¼
+æˆåŠŸç»“æœå¦‚å›¾
 
 ![3](https://ooo.0o0.ooo/2016/10/10/57fb734d5b3a7.png)
 
 ###Experimental experience
-Í¨¹ı±¾´ÎÊÔÑéÎÒÑ§»áÁËÔÚĞéÄâ»úÉÏÅäÖÃdol»·¾³£»ÁË½âÁËGithub²Ö¿âµÄ½¨Á¢£»¶ÔmarkdownµÄÓï·¨½øĞĞÁË³õ²½Ñ§Ï°£¬ºÜ·½±ãºÃÓÃ¡£
+é€šè¿‡æœ¬æ¬¡è¯•éªŒæˆ‘å­¦ä¼šäº†åœ¨è™šæ‹Ÿæœºä¸Šé…ç½®dolç¯å¢ƒï¼›äº†è§£äº†Githubä»“åº“çš„å»ºç«‹ï¼›å¯¹markdownçš„è¯­æ³•è¿›è¡Œäº†åˆæ­¥å­¦ä¹ ï¼Œå¾ˆæ–¹ä¾¿å¥½ç”¨ã€‚
